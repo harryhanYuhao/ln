@@ -1,6 +1,7 @@
 # Cmake
 
 ## Quick Usage for Cmake
+
 1. Enter source directory and create `CMakeLists.txt` file.
 The minimum required lines in `CMakeLists.txt` is 
 ```
@@ -65,8 +66,4 @@ target_link_libraries(<project_name> <name_of_library_binary_without_.a_or_lib>)
 ```
 
 See example in `/study/coding/ln/cpp/cmake/ctt/src/test/cpp`
-
-
-
-
 

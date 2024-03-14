@@ -27,3 +27,13 @@ for i in (0..5).rev() {
     print!("{} ", i); //4, 3, 2, 1, 0
 }
 ```
+
+Iterating over vector:
+
+```
+let x = vec![1,2,3]
+
+for i in x.iter(){
+    println!("{}", i);
+}
+```

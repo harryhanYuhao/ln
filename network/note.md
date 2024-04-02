@@ -5,7 +5,6 @@
 ### IP (Internet Protocol) address 
 
 
-
 ### MAC (Media Access Control) address
 
 Each hardware has an invariant MAC address. A computer may have a unique MAC address for each network interface (WLAN, LAN, etc). MAC address is in the form of `b4:8c:9d:50:d0:79` (6 haxdecimal pair, 48 bit)

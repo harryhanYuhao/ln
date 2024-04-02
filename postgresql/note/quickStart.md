@@ -99,3 +99,31 @@ DO UPDATE SET
   price = EXCLUDED.price,
   quantity = EXCLUDED.quantity;
 ```
+
+**Duplicate Table** 
+
+```create table dupe_users as (select * from users);```
+
+**Merge Table**
+
+```
+INSERT INTO table1
+  (SELECT * FROM table2
+   WHERE name NOT IN
+       (SELECT name FROM table1));
+```
+
+```
+CREATE TABLE new_table AS
+(SELECT * FROM table1
+UNION
+SELECT * FROM table2);
+```
+
+### Backup data 
+
+#### Export to CSV
+
+```
+COPY table TO '<path>' DELIMITER ',' CSV HEADER;
+```

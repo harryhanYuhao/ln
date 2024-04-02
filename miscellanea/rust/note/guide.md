@@ -81,7 +81,7 @@ let a: [i32; 5] = [1, 2, 3, 4, 5];
 
 A statement is an imperative line ending with `;`. A expression is a declartive line, that is evaluted into a something. Expression can be part of a statment
 
-```
+```rust
 let a = 5; // This line is a statement. 5 is expression
 let y = {
     let x = 3;
@@ -93,7 +93,7 @@ let y = {
 
 Function are also expressions.
 
-```
+```rust
 fn print(x :u32, unit :char) -> u32{
     println!("The value of x is {x}{unit}");
     x + 1  // the return value
@@ -268,7 +268,8 @@ When using cargo to compile rust code, cargo look for `src/main.rs` and `src/lib
 Rust's exportable code are organised into module. To use a module, the name of the module needs to be declared.
 
 There can also be submodule. Submodule, `yes`, of module `hello` must be placed in the directory `src/hello`.
-```
+
+```rust
 // file: src/main.rs
 mod hello; // declare mod hello
 
@@ -279,7 +280,7 @@ fn main() {
 }
 ```
 
-```
+```rust
 // file: src/hello.rs
 // The name of the file shall fit name of the module
 
@@ -289,7 +290,7 @@ pub fn hi_from_hello_mod() {
 }
 ```
 
-```
+```rust
 //file src/hello/yes.rs
 pub fn yes() {
     println!("yes!");

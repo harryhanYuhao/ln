@@ -24,7 +24,7 @@ func main(){
 
 **Warning** Go's package and source file management is, to the least, verbose. Unlike most other languages, in go you can not use a one-liner such as "import ../example" to import symbols from another file. Instead, go has a full-grown package-module system. 
 
-The lack of straight-forward importing system is because, from the beginning, 
+The lack of straight-forward importing system is deliberate:
 > Go was developed for use by large teams working on million line programs ()[Quote](https://groups.google.com/g/golang-nuts/c/_BqV6Rk15UA/m/ns4y8jbxBgAJ))
 
 ### Package
@@ -91,7 +91,6 @@ const Key = 1
 
 
 ### Decenterised publish
-
 
 ### Testing
 

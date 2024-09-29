@@ -1,4 +1,4 @@
-# Rust Quick Start
+# Rust Guide
 
 ## References
 
@@ -252,7 +252,9 @@ impl Rect {
 
 Struct can have method, whose first param is an object of itself, and associated function that is not method, whose first param is not an object of itself.
 
-Call method with `rect.area()`. Call other associated function with `Rect::square(2)`.
+Call method with `rect.area()`. 
+Call other associated function with `Rect::square(2)`. 
+Note associated function is called with `::`, specifying the name space, on the type itself. Like static method in Java.
 
 ## Package Management and Build System
 
@@ -393,4 +395,8 @@ fn read_username_from_file() -> Result<String, io::Error> {
 }
 ```
 
+## Generic Type and Traits
 
+In rust you can define generic type. 
+
+A trait is functionality of some type that is shared with other types.

@@ -26,9 +26,9 @@ The config file shall be edited to suit the current kernel version by using `mak
 
 Note, it is recommand to have `CONFIG_EXT4_FS=y` in the config file.
 
-### Compile the kernel (may take hours)
+### Compile the kernel (may take hours on older computers)
 
-Use the command `make -j8` to compile the kernel. The number 8 is the number of threads to use. It is recommand to use the total number of the thread a cpu has.
+Use the command `make -j8` to compile the kernel. The number 8 is the number of threads to use. Do not exceed the number of physical threads a of the cpu. 
 
 Use `nproc` to get the number of threads a cpu has.
 
